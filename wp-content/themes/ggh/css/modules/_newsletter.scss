@@ -1,0 +1,24 @@
+.newsletter {
+  form {
+    position: relative;
+  }
+  input {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .5rem;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="submit"] {
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+}

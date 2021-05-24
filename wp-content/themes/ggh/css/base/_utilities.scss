@@ -1,0 +1,82 @@
+/* DISABLE SELECTION ON SCREEN */
+.u-disable-select {
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* FLOAT */
+.u-clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+/* PADDING */
+.u-p-right {
+	padding-right: 3rem;
+}
+.u-p-bottom-till-small {
+	padding-bottom: 3rem;
+	@include atSmall{
+		padding-bottom: 15px;
+	}
+}
+.u-p-bottom-till-medium {
+	padding-bottom: 3rem;
+	@include atMedium {
+		padding-bottom: 15px;
+	}
+}
+.u-p-bottom {
+	padding-bottom: 2rem;
+}
+.u-p-top-bottom-from-medium {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* HIDE */
+.u-hide-till-medium {
+	display: none;
+	@include atMedium {
+		display: block;
+	}
+}
+.u-hide-from-medium {
+	display: block;
+	@include atMedium {
+		display: none;
+	}
+}
+
+
+// .u-float-left {
+// 	float: left !important;
+// }
+// .u-float-right {
+// 	float: right !important;
+// }
+
+// /* TEXT */
+// .u-t-left {
+// 	text-align: left !important;
+// }
+// .u-t-right {
+// 	text-align: right !important;
+// }
+// .u-t-center {
+// 	text-align: center !important;
+// }
+// .u-t-uppercase {
+// 	text-transform: uppercase !important;
+// }
+
+// /* TEXT COLOR */
+// .u-c-white {
+// 	color: #fff !important;
+// }

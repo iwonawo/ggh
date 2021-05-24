@@ -1,0 +1,83 @@
+.site-header {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .header-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-flex-group {
+    display: flex;
+    align-items: center;
+  }
+  .search-icon {
+    border-right: 1px solid $mainWhite;
+    padding-right: 4px;
+    font-weight: 900;
+  }
+
+  .logo {
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 44px;
+		}
+	}
+
+  &__top {
+    background-color: $darkGray;
+    display: none;
+    @include atMedium {
+      display: block;
+    }
+    a,
+    a:link,
+    a:visited {
+      color: $mainWhite;
+      font-size: 12px;
+      transition: color .2s ease-in-out;
+    }
+    a:hover,
+    a:active {
+      color: rgba(255,255,255,0.6);
+    }
+    i {
+      margin-right: 8px;
+      font-size: 1rem;
+    }
+  }
+  &__bottom {
+    padding: .5rem 0;
+  }
+
+  &__modal {
+    height: auto;
+    background-color: $lightGray;
+    display: none;
+    &--is-active {
+      @include atMedium {
+        display: block;
+      }
+    }
+  }
+
+  //Mobile Menu Icon 
+  .mobile-menu-icon {
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 40px;
+    width:60px;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: transparent;
+    margin-left: 4px;
+    cursor: pointer;
+    i {
+      font-size: 20px;
+      color: rgba(0,0,0,.5);
+    }
+  }
+
+}
