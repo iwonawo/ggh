@@ -1,0 +1,32 @@
+.container {
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	@include atSmall {
+		max-width: 540px;
+	}
+	@include atMedium {
+		max-width: 720px;
+	}
+	@include atLarge {
+		max-width: 968px;
+	}
+	@include atXL {
+		max-width: 1140px;
+	}
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.container:before,
+.container:after {
+	content: " ";
+	display: table;
+}
+.container:after {
+	clear: both;
+}

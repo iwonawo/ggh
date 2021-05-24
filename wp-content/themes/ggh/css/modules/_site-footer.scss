@@ -1,0 +1,118 @@
+.site-footer {
+	position: relative;
+
+  &__top {
+    background-color: $lightGray;
+    color: $fontWhite;
+    padding: 30px 0;
+    @include atMedium {
+      padding: 70px 0;
+    }
+  }
+  &__middle {
+    background-color: $darkGray;
+    color: $fontWhite;
+    padding: 30px 0;
+    @include atMedium {
+      padding: 50px 0;
+    }
+  }
+  &__bottom {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-nav a:link,
+  &__bottom-nav a:visited {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #808080;
+    margin-right: 5px;
+    transition: color .2s ease-in-out;
+  }
+  &__bottom-nav a:hover,
+  &__bottom-nav a:active {
+    color: #000;
+  }
+  &__text {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    font-size: 10px;
+    font-weight: 500;
+    color: #808080;
+  }
+
+  .footer-location {
+    color: #fff;
+    font-size: 1.85rem;
+    text-decoration: none;
+    @include atSmall {
+      float: left;
+    }
+    @include atMedium {
+      float: right;
+    }
+  }
+
+  .footer-separator {    
+
+    @include atMedium {
+      border-right: solid 1px $mainWhite;
+      border-left: solid 1px $mainWhite;
+      padding-left:3%;
+      padding-right:3%;
+    }
+    @include atLarge {
+      padding-left:7%;
+      padding-right:7%;
+    }
+    @include atXL {
+      padding-left:10%;
+      padding-right:10%;
+    }
+  }
+
+  .footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @include atSmall {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &--middle {
+      @include atSmall {
+        flex-direction: column;
+      }
+      @include atMedium {
+        flex-direction: row;
+      }
+    }
+    &--copyright {
+      flex-direction: row;
+    }
+  }
+  .footer-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    line-height: 1;
+    &--top {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .nav-box {
+    display: flex;
+  }
+}

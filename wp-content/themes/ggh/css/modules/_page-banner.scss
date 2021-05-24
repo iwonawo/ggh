@@ -1,0 +1,67 @@
+.page-banner {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	background-color: $mainBlue;
+	border-bottom: 5px solid $lightGray;
+	overflow: hidden;
+	@include atSmall {
+		height: 250px;
+	}
+	@include atMedium {
+		height: 300px;
+	}
+	@include atLarge {
+		height: 450px;
+	}
+	@include atXL {
+		height: 500px;
+	}
+
+	a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+
+	.caption {
+		display: inline-block;
+		background: rgba(108,117,125,0.8);
+		padding: 10px 30px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		color: $fontWhite;
+	}
+	.caption_title {
+		font-size: 24px;
+		font-weight: 900;
+		line-height: 1.5;
+		margin-bottom: .5rem;
+	}
+	.caption_subtitle {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 1.2;
+		margin-bottom: .5rem;
+		@include atMedium {
+			font-size: 18px;
+		}
+		@include atLarge {
+			font-size: 20px;
+		}
+	}
+	
+
+}

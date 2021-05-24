@@ -1,0 +1,43 @@
+.site-social {
+	display: flex;
+	justify-content: center;
+	@include atSmall {
+		justify-content: flex-start;
+	}
+	@include atMedium {
+		justify-content: center;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		text-decoration: none;
+		color: $darkGray;
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+		font-size: 1.25rem;
+		display: flex;
+		width: 2.25rem;
+		height: 2.25rem;
+		margin: 0 5px;
+		border: 2px solid #fff;
+		border-radius: 2.5rem;
+		background-color: #fff;
+		align-items: center;
+		justify-content: center;
+		i {
+			font-style: normal;
+			font-weight: 400;
+			text-transform: none;
+			line-height: 1;
+			transition: color 0.3s ease-in-out;
+		}
+	}
+	a:hover,
+	a:active {
+		border-color: $lightGray;
+		background-color: $lightGray;
+		i {
+			color: #fff;
+		}
+	}
+}

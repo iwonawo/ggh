@@ -1,0 +1,26 @@
+.row {
+	@include clearfix;
+	&--gutters {
+		margin-right: -30px;
+	}
+	&--gutters > div {
+		padding-right: 30px;
+	}
+
+	@include atSmall {
+		&__small-6 {
+			float: left;
+			width: 50%;
+		}
+	}
+	@include atLarge{
+		&__large-3 {
+			float: left;
+			width: 25%;
+		}
+		&__large-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+}

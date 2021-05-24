@@ -1,0 +1,53 @@
+html {
+	scroll-behavior: smooth;
+	position: relative;
+}
+
+body {
+	font-family: $mainFont;
+	background-color: $mainWhite;
+	color: $fontDark;
+	font-size: 16px;
+	line-height: 1.65;
+	overflow-x: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $mainFont;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 1.2rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: orangered;
+	color: #fff;
+}
