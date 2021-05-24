@@ -14,11 +14,13 @@
   .swiper-button-prev {
     @include atMedium {
       left: 50px;
+      z-index: 99;
     }
   }
   .swiper-button-next {
     @include atMedium {
       right: 50px;
+      z-index: 99;
     }
   }
 }
